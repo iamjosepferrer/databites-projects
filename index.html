@@ -334,47 +334,19 @@ function setLang(lang) {
 }
 
 /* ── PROJECT REGISTRY ─────────────────────────────────────── */
-const PROJECTS = [
-  {
-    id: 'catalonia-atlas',
-    titleKey: 'projects.atlas.title',
-    descKey: 'projects.atlas.desc',
-    tags: ['DataViz', 'Maps'],
-    chips: [
-      { label: 'MapLibre GL', style: 'green' },
-      { label: 'Python', style: 'forest' },
-      { label: 'GeoJSON', style: 'forest' }
-    ],
-    url: 'http://catalonia-atlas.projects.databites.tech/',
-    screenshot: 'images/projects-headers/catalonia-atlas.png',
-    live: true,
-    year: '2025'
-  },
-  {
-    id: 'project-2',
-    titleKey: 'projects.p2.title',
-    descKey: 'projects.p2.desc',
-    tags: ['DataViz'],
-    chips: [{ labelKey: 'projects.inProgress', style: 'muted' }],
-    url: null, screenshot: null, live: false, year: null
-  },
-  {
-    id: 'project-3',
-    titleKey: 'projects.p3.title',
-    descKey: 'projects.p3.desc',
-    tags: ['DataViz'],
-    chips: [{ labelKey: 'projects.inProgress', style: 'muted' }],
-    url: null, screenshot: null, live: false, year: null
-  },
-  {
-    id: 'project-4',
-    titleKey: 'projects.p4.title',
-    descKey: 'projects.p4.desc',
-    tags: ['ML'],
-    chips: [{ labelKey: 'projects.inProgress', style: 'muted' }],
-    url: null, screenshot: null, live: false, year: null
+
+let PROJECTS = [];
+
+async function loadProjects() {
+  try {
+    const res = await fetch('/projects.json');
+    if (!res.ok) throw new Error(res.status);
+    PROJECTS = await res.json();
+  } catch (e) {
+    console.error('Could not load projects.json:', e);
   }
-];
+  filterProjects(_currentTag);
+}
 
 function buildCard(p) {
   const chips = p.chips.map(c => {
@@ -476,8 +448,8 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
       btn.classList.toggle('active', btnLang === lang);
     });
   }
-  filterProjects('all');
   applyI18n();
+  loadProjects();
 })();
 </script>
 </body>
