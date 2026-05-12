@@ -1,5 +1,0 @@
-{
-  "outputDirectory": ".",
-  "cleanUrls": true,
-  "rewrites": [{ "source": "/(.*)", "destination": "/projects-index.html" }]
-}
