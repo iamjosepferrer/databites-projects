@@ -5,7 +5,7 @@ This is where I publish my DataViz, data science, and AI projects. Real work. Sh
 
 → **[projects.databites.tech](https://projects.databites.tech)**
 
-[![projects.databites.tech](https://image.thum.io/get/width/1200/crop/800/https://projects.databites.tech)](https://projects.databites.tech)
+[![projects.databites.tech](https://api.microlink.io/?url=https://projects.databites.tech&screenshot=true&meta=false&embed=screenshot.url)](https://projects.databites.tech)
 
 ---
 
@@ -21,7 +21,7 @@ Each project gets its own subdomain (`catalonia-atlas.projects.databites.tech`) 
 
 ### [Catalonia Income Atlas](https://catalonia-atlas.projects.databites.tech)
 
-[![Catalonia Income Atlas](https://image.thum.io/get/width/1200/crop/800/https://catalonia-atlas.projects.databites.tech)](https://catalonia-atlas.projects.databites.tech)
+[![Catalonia Income Atlas](https://api.microlink.io/?url=https://catalonia-atlas.projects.databites.tech&screenshot=true&meta=false&embed=screenshot.url)](https://catalonia-atlas.projects.databites.tech)
 
 An interactive choropleth map of income inequality across Catalonia — built because I wanted to understand the real shape of economic disparity in the place I'm from.
 
