@@ -13,7 +13,7 @@ This is where I publish my DataViz, data science, and AI projects. Real work. Sh
 
 A portfolio gallery that indexes every public project I build under the [DataBites](https://databites.tech) brand.
 
-Each project gets its own subdomain (`catalonia-atlas.projects.databites.tech`) and links back to this gallery. The gallery itself is intentionally simple — one `index.html`, no framework, no build step. To add a project, I add one object to a JavaScript array and push. That's it.
+Each project gets its own subdomain (`catalonia-atlas.projects.databites.tech`) and links back to this gallery. The gallery is intentionally simple — one `index.html`, no framework, no build step. Projects are loaded from `projects.json`, the single source of truth. To add a project, I add one object to `projects.json` and push. Both this site and [databites.tech](https://databites.tech) pull from the same file automatically.
 
 ---
 
@@ -36,12 +36,13 @@ An interactive choropleth map of income inequality across Catalonia — built be
 ```
 databites-projects/
 ├── index.html              # The entire portfolio site
+├── projects.json           # ← single source of truth for all projects
 ├── vercel.json             # Deployment config
 └── images/
     ├── databitestech_logo.png
     ├── databitestech_logo_letters.png
     ├── databites_clearly_explained.png
-    └── projects-headers/   # 1200×630px OG-style screenshots per project
+    └── projects-headers/   # 1200×630px screenshots per project
         └── catalonia-atlas.png
 ```
 
@@ -49,26 +50,26 @@ databites-projects/
 
 ## How to add a project
 
-Open `index.html` and find the `PROJECTS` array (~line 280). Copy this object and fill in the fields:
+Edit `projects.json` in the repo root. Add one object — live projects get the full format, placeholders stay compact:
 
-```js
+```json
 {
-  id: 'your-project-id',
-  title: 'Project Title',
-  desc: 'One or two sentences. What it shows, what data, what tech.',
-  tags: ['DataViz'],          // DataViz · Maps · ML · Tools
-  chips: [
-    { label: 'D3.js',   style: 'green'  },
-    { label: 'Python',  style: 'forest' },
+  "id": "your-project-id",
+  "titleKey": "projects.yourproject.title",
+  "descKey": "projects.yourproject.desc",
+  "tags": ["DataViz"],
+  "chips": [
+    { "label": "D3.js",   "style": "green"  },
+    { "label": "Python",  "style": "forest" }
   ],
-  url: 'https://your-project.projects.databites.tech/',
-  screenshot: 'images/projects-headers/your-project.png',
-  live: true,
-  year: '2025'
-},
+  "url": "https://your-project.projects.databites.tech/",
+  "screenshot": "https://projects.databites.tech/images/projects-headers/your-project.png",
+  "live": true,
+  "year": "2025"
+}
 ```
 
-Add the screenshot to `images/projects-headers/` at 1200×630px. Push to `main`. Vercel deploys automatically.
+Then add the matching translation strings to the `translations` object in `index.html` for EN, ES, and CA. Add the screenshot to `images/projects-headers/` at 1200×630px. Push to `main`. Vercel deploys automatically.
 
 ---
 
