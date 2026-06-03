@@ -1,56 +1,156 @@
 [
   {
     "id": "catalonia-atlas",
-    "titleKey": "projects.atlas.title",
-    "descKey": "projects.atlas.desc",
-    "tags": ["DataViz", "Maps"],
-    "chips": [
-      { "label": "MapLibre GL", "style": "green" },
-      { "label": "Python", "style": "forest" },
-      { "label": "GeoJSON", "style": "forest" }
-    ],
+    "featured": true,
+    "live": true,
+    "year": "2025",
     "url": "https://catalonia-atlas.projects.databites.tech/",
     "screenshot": "https://projects.databites.tech/images/projects-headers/catalonia-atlas.png",
-    "live": true,
-    "year": "2025"
+    "tags": [
+      "DataViz",
+      "Maps"
+    ],
+    "chips": [
+      {
+        "label": "MapLibre GL",
+        "style": "green"
+      },
+      {
+        "label": "Python",
+        "style": "forest"
+      },
+      {
+        "label": "GeoJSON",
+        "style": "forest"
+      }
+    ],
+    "title": {
+      "en": "Catalonia Income Atlas",
+      "es": "Atlas de Renta de Cataluña",
+      "ca": "Atles de Renda de Catalunya"
+    },
+    "desc": {
+      "en": "Interactive choropleth map of income inequality across 5,108 census tracts, 947 municipalities, and 4 provinces in Catalonia. INE data, 2015–2023.",
+      "es": "Mapa coroplético interactivo de desigualdad de renta en 5.108 secciones censales, 947 municipios y 4 provincias de Cataluña. Datos INE, 2015–2023.",
+      "ca": "Mapa coroplètic interactiu de desigualtat de renda a 5.108 seccions censals, 947 municipis i 4 províncies de Catalunya. Dades INE, 2015–2023."
+    }
   },
   {
     "id": "popgrid",
-    "titleKey": "projects.popgrid.title",
-    "descKey": "projects.popgrid.desc",
-    "tags": ["DataViz", "Maps", "Tools"],
-    "chips": [
-      { "label": "Python", "style": "green" },
-      { "label": "PyPI", "style": "forest" },
-      { "label": "Open source", "style": "forest" }
-    ],
+    "featured": true,
+    "live": true,
+    "year": "2026",
     "url": "https://github.com/databites-tech/popgrid",
     "screenshot": "https://projects.databites.tech/images/projects-headers/popgrid.png",
-    "live": true,
-    "year": "2026"
+    "tags": [
+      "DataViz",
+      "Maps",
+      "Tools"
+    ],
+    "chips": [
+      {
+        "label": "Python",
+        "style": "green"
+      },
+      {
+        "label": "PyPI",
+        "style": "forest"
+      },
+      {
+        "label": "Open source",
+        "style": "forest"
+      }
+    ],
+    "title": {
+      "en": "popgrid",
+      "es": "popgrid",
+      "ca": "popgrid"
+    },
+    "desc": {
+      "en": "Open-source Python library that turns any country or region into a block cartogram, where every block is an equal share of land area or population. On PyPI: pip install popgrid.",
+      "es": "Librería de Python de código abierto que convierte cualquier país o región en un cartograma de bloques, donde cada bloque es una parte igual de superficie o población. En PyPI: pip install popgrid.",
+      "ca": "Llibreria de Python de codi obert que converteix qualsevol país o regió en un cartograma de blocs, on cada bloc és una part igual de superfície o població. A PyPI: pip install popgrid."
+    }
   },
   {
     "id": "project-2",
-    "titleKey": "projects.p2.title",
-    "descKey": "projects.p2.desc",
-    "tags": ["DataViz"],
-    "chips": [{ "labelKey": "projects.inProgress", "style": "muted" }],
-    "url": null, "screenshot": null, "live": false, "year": null
+    "featured": false,
+    "live": false,
+    "year": null,
+    "url": null,
+    "screenshot": null,
+    "tags": [
+      "DataViz"
+    ],
+    "chips": [
+      {
+        "labelKey": "projects.inProgress",
+        "style": "muted"
+      }
+    ],
+    "title": {
+      "en": "Project #2",
+      "es": "Proyecto #2",
+      "ca": "Projecte #2"
+    },
+    "desc": {
+      "en": "The next DataViz project. Subscribe to the newsletter to be the first to see it.",
+      "es": "El próximo proyecto de DataViz. Suscríbete a la newsletter para verlo el primero.",
+      "ca": "El proper projecte de DataViz. Subscriu-te a la newsletter per ser el primer en veure'l."
+    }
   },
   {
     "id": "project-3",
-    "titleKey": "projects.p3.title",
-    "descKey": "projects.p3.desc",
-    "tags": ["DataViz"],
-    "chips": [{ "labelKey": "projects.inProgress", "style": "muted" }],
-    "url": null, "screenshot": null, "live": false, "year": null
+    "featured": false,
+    "live": false,
+    "year": null,
+    "url": null,
+    "screenshot": null,
+    "tags": [
+      "DataViz"
+    ],
+    "chips": [
+      {
+        "labelKey": "projects.inProgress",
+        "style": "muted"
+      }
+    ],
+    "title": {
+      "en": "Project #3",
+      "es": "Proyecto #3",
+      "ca": "Projecte #3"
+    },
+    "desc": {
+      "en": "The third portfolio piece. Consulting prospects: contact me to see private work samples.",
+      "es": "La tercera pieza del portfolio. Clientes de consultoría: contáctame para ver muestras privadas.",
+      "ca": "La tercera peça del portfolio. Clients de consultoria: contacta'm per veure mostres privades."
+    }
   },
   {
     "id": "project-4",
-    "titleKey": "projects.p4.title",
-    "descKey": "projects.p4.desc",
-    "tags": ["ML"],
-    "chips": [{ "labelKey": "projects.inProgress", "style": "muted" }],
-    "url": null, "screenshot": null, "live": false, "year": null
+    "featured": false,
+    "live": false,
+    "year": null,
+    "url": null,
+    "screenshot": null,
+    "tags": [
+      "ML"
+    ],
+    "chips": [
+      {
+        "labelKey": "projects.inProgress",
+        "style": "muted"
+      }
+    ],
+    "title": {
+      "en": "Project #4",
+      "es": "Proyecto #4",
+      "ca": "Projecte #4"
+    },
+    "desc": {
+      "en": "More work in the pipeline. Follow on X @iamjosepferrer for updates.",
+      "es": "Más trabajo en marcha. Sígueme en X @iamjosepferrer para actualizaciones.",
+      "ca": "Més feina en curs. Segueix-me a X @iamjosepferrer per actualitzacions."
+    }
   }
 ]

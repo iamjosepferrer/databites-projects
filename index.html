@@ -317,6 +317,11 @@ function T(key) {
   return translations[currentLang][key] || translations.en[key] || key;
 }
 
+function pick(field, keyFallback) {
+  if (field && typeof field === 'object') return field[currentLang] || field.en || '';
+  return keyFallback ? T(keyFallback) : (field || '');
+}
+
 function applyI18n() {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
@@ -362,7 +367,7 @@ function buildCard(p) {
   }).join('');
 
   const previewInner = p.screenshot
-    ? `<img src="${p.screenshot}" alt="${T(p.titleKey)}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    ? `<img src="${p.screenshot}" alt="${pick(p.title, p.titleKey)}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
        <div class="card-preview-placeholder forest-bg" style="display:none;position:absolute;inset:0;">${mapPinSVG()}</div>`
     : `<div class="card-preview-placeholder ${p.live ? 'forest-bg' : 'pale-bg'}" style="width:100%;height:100%;">
        ${p.live ? mapPinSVG() : comingSoonSVG()}
@@ -382,8 +387,8 @@ function buildCard(p) {
       <div class="card-preview" style="${!p.url ? 'cursor:default' : ''}">${previewInner}</div>
       <div class="card-body">
         <div class="card-tags">${chips}</div>
-        <div class="card-title">${T(p.titleKey)}</div>
-        <div class="card-desc">${T(p.descKey)}</div>
+        <div class="card-title">${pick(p.title, p.titleKey)}</div>
+        <div class="card-desc">${pick(p.desc, p.descKey)}</div>
         ${footer}
       </div>
     </div>`;
