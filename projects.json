@@ -15,6 +15,21 @@
     "year": "2025"
   },
   {
+    "id": "popgrid",
+    "titleKey": "projects.popgrid.title",
+    "descKey": "projects.popgrid.desc",
+    "tags": ["DataViz", "Maps", "Tools"],
+    "chips": [
+      { "label": "Python", "style": "green" },
+      { "label": "PyPI", "style": "forest" },
+      { "label": "Open source", "style": "forest" }
+    ],
+    "url": "https://github.com/databites-tech/popgrid",
+    "screenshot": "https://projects.databites.tech/images/projects-headers/popgrid.png",
+    "live": true,
+    "year": "2026"
+  },
+  {
     "id": "project-2",
     "titleKey": "projects.p2.title",
     "descKey": "projects.p2.desc",
