@@ -108,6 +108,43 @@
     }
   },
   {
+    "id": "popgrid-explorer",
+    "featured": true,
+    "live": true,
+    "year": "2026",
+    "url": "https://popgrid.databites.tech/",
+    "screenshot": "https://projects.databites.tech/images/projects-headers/popgrid-explorer.png",
+    "tags": [
+      "DataViz",
+      "Maps",
+      "Interactive"
+    ],
+    "chips": [
+      {
+        "label": "24 countries",
+        "style": "green"
+      },
+      {
+        "label": "Land, people, GDP",
+        "style": "forest"
+      },
+      {
+        "label": "Canvas",
+        "style": "forest"
+      }
+    ],
+    "title": {
+      "en": "popgrid explorer",
+      "es": "popgrid explorer",
+      "ca": "popgrid explorer"
+    },
+    "desc": {
+      "en": "Every country cut into 1,000 equal blocks. Switch between land, population and GDP and watch each region take the share it owns. Built with popgrid.",
+      "es": "Cada país dividido en 1.000 bloques iguales. Cambia entre superficie, población y PIB y mira cómo cada región ocupa la parte que le toca. Hecho con popgrid.",
+      "ca": "Cada país dividit en 1.000 blocs iguals. Canvia entre superfície, població i PIB i mira com cada regió ocupa la part que li toca. Fet amb popgrid."
+    }
+  },
+  {
     "id": "popgrid",
     "featured": false,
     "live": true,
@@ -139,9 +176,9 @@
       "ca": "popgrid"
     },
     "desc": {
-      "en": "Open-source Python library that turns any country or region into a block cartogram, where every block is an equal share of land area or population. On PyPI: pip install popgrid.",
-      "es": "Librería de Python de código abierto que convierte cualquier país o región en un cartograma de bloques, donde cada bloque es una parte igual de superficie o población. En PyPI: pip install popgrid.",
-      "ca": "Llibreria de Python de codi obert que converteix qualsevol país o regió en un cartograma de blocs, on cada bloc és una part igual de superfície o població. A PyPI: pip install popgrid."
+      "en": "Open-source Python library that turns any country or region into a block cartogram, where every block is an equal share of land, population or GDP. On PyPI: pip install popgrid.",
+      "es": "Librería de Python de código abierto que convierte cualquier país o región en un cartograma de bloques, donde cada bloque es una parte igual de superficie, población o PIB. En PyPI: pip install popgrid.",
+      "ca": "Llibreria de Python de codi obert que converteix qualsevol país o regió en un cartograma de blocs, on cada bloc és una part igual de superfície, població o PIB. A PyPI: pip install popgrid."
     }
   },
   {
